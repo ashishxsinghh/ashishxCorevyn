@@ -1,98 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Inspired by Leerob</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ashish — profile</title>
   <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0a0a0a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+    html, body { height: 100%; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background-color: #0e0e0e;
-      color: #b4b4b4;
-      line-height: 1.7;
-      padding: 2rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      transition: background 0.3s, color 0.3s;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
     }
-    h1, h2 {
-      font-weight: 600;
+    .wrap {
+      max-width: 860px;
+      margin: 56px auto;
+      padding: 0 24px 64px;
     }
+    header { margin-bottom: 28px; }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 36px;
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      margin: 0 0 8px;
+      text-transform: lowercase;
     }
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 0.25rem;
+    .subtitle {
+      font-size: 16px;
+      color: var(--muted);
+      margin-top: 0;
     }
-    ul {
-      padding-left: 1.2rem;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    a {
-      color: #4e4e4e;
+    section { border-top: 1px solid var(--border); padding-top: 20px; margin-top: 28px; }
+    h2 { font-size: 18px; margin: 0 0 8px; text-transform: lowercase; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 0 18px; }
+    li { margin: 6px 0; }
+    .meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+    .meta a, .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 14px;
+      color: var(--fg);
       text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      border-radius: 8px;
     }
-    a:hover {
-      text-decoration: underline;
-      color: antiquewhite;
-    }
-    .nav {
-      margin-top: 3rem;
-      display: flex;
-      gap: 1.2rem;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-    }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    .card { border: 1px solid var(--border); border-radius: 12px; padding: 14px; }
+    .card h3 { margin: 0 0 6px; font-size: 16px; text-transform: lowercase; }
+    .muted { color: var(--muted); }
+    footer { margin-top: 40px; font-size: 14px; color: var(--muted); }
+    @media (min-width: 720px) { .grid { grid-template-columns: repeat(2, 1fr); } }
   </style>
 </head>
 <body>
-  <h1>i build, edit, design & explore stories</h1>
+  <main class="wrap">
+    <header>
+      <h1>ashish</h1>
+      <p class="subtitle">i build design-focused saas systems and digital toolkits using no-code, lightweight development, and automation.</p>
+      <div class="meta">
+        <span class="mono">ashishxsinghhh@gmail.com</span>
+        <a href="#" aria-label="https://x.com/ashishxsinghh">x</a>
+      </div>
+    </header>
 
-  <h2>things i'm doing now</h2>
-  <ul>
-    <li>freelance video editor — short form & content reels</li>
-    <li>UI design for startups and creatives</li>
-    <li>involved in infra tenders (dad’s gig, i mostly nod along)</li>
-    <li>building & selling AI-powered digital kits on Gumroad</li>
-    <li>learning business, strategy, and visual communication daily</li>
-  </ul>
-  <h2>corevyn</h2>
-<ul>
-  <li>launched it as a solo label for experiments</li>
-  <li>used it to ship AI tools, digital kits, design work</li>
-  <li>not building under it right now — might later</li>
-  <li>still sits on my banner because the name stays</li>
-  <li>think of it as a quiet brand, not a startup</li>
-</ul>
-  <h2>unchanged truths</h2>
-  <ul>
-    <li>you don’t need a degree to start making money</li>
-    <li>being multi-skilled is a superpower</li>
-    <li>vibe coding > daily coding</li>
-    <li>emotions matter more than analytics in storytelling</li>
-    <li>you can outlearn your past version any day</li>
-    <li>editing videos teaches timing better than any course</li>
-    <li>real life is more important than online image</li>
-    <li>focus + silence = power</li>
-    <li>nobody owes you anything. earn it. prove it.</li>
-    <li>discipline makes talent look lazy</li>
-    <li>you can build your path without a roadmap</li>
-    <li>freelancing isn’t a side hustle — it’s a skill</li>
-    <li>your gym mirror tells more truth than LinkedIn</li>
-  </ul>
+    <section>
+      <h2>current work</h2>
+      <ul>
+        <li>ai-powered marketing toolkits: notion dashboards, swipe file pdfs, funnel builders.</li>
+        <li>public templates: notion, google docs, and pdf assets ready for direct use.</li>
+        <li>early design saas prototypes built with no-code frameworks.</li>
+        <li>ugc and short-form video editing as client services.</li>
+        <li>photography and cinematography with mobile-based production.</li>
+        <li>160-page diary documenting events and milestones with attached media.</li>
+      </ul>
+    </section>
 
-  <div class="nav">
-    <a href="#">about</a>
-    <a href="https://x.com/ashishxsinghh">x</a>
-    <a href="mailto:ashishxsinghhh@gmail.com">contact</a>
-  </div>
+    <section>
+      <h2>work focus</h2>
+      <ul>
+        <li>saas development with no-code tools and minimal javascript.</li>
+        <li>design systems: landing pages, branding kits, template libraries.</li>
+        <li>marketing automation, ad creatives, and delivery workflows.</li>
+        <li>short-form video editing and ugc for client campaigns.</li>
+        <li>ai integration for repeatable, scalable content operations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>selected projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>ai marketing toolkit</h3>
+          <p>notion campaign planner, swipe file pdf, and funnel builder. packaged as public templates.</p>
+        </div>
+        <div class="card">
+          <h3>design saas prototypes</h3>
+          <p>no-code apps delivering branding kits, landing pages, and template libraries.</p>
+        </div>
+        <div class="card">
+          <h3>public digital assets</h3>
+          <p>notion dashboards, docs templates, and pdfs distributed as downloadable products.</p>
+        </div>
+        <div class="card">
+          <h3>photography / cinematography</h3>
+          <p>mobile-based photo and video work since 2023 with editing for short-form content.</p>
+        </div>
+        <div class="card">
+          <h3>diary documentation</h3>
+          <p>160-page diary with photographs and written notes as a structured record of milestones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>recognition</h2>
+      <ul>
+        <li>released ai-powered toolkits (2025).</li>
+        <li>built and distributed public design templates and automation assets (2025).</li>
+        <li>early design saas prototypes in progress.</li>
+        <li>consistent photography and cinematography output since 2023.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>next steps</h2>
+      <ul>
+        <li>launch a design-focused saas agency with profitability goals set for december 2025.</li>
+        <li>scale services in saas design, ugc, and automation into clear client offerings.</li>
+        <li>continue building and shipping public-facing digital toolkits.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>thank you for coming here</p>
+    </footer>
+  </main>
 </body>
 </html>
